@@ -21,7 +21,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const analytics = getAnalytics(app);
+const analytics = getAnalytics(app); // do we really need ts(this)?
 const db = getFirestore(app);
 
 export { app, auth, db };

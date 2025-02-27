@@ -78,7 +78,7 @@ export  default function Signupform() {
           const userCredential = await createUserWithEmailAndPassword(auth, values.email, values.password);
           console.log("User created:", userCredential.user);
           await saveUserData(userCredential.user.uid, values.username);
-          router.push("/login"); // Redirect to login page after successful signup
+          router.push("/signup/profile-complete"); // go to profile creation tab
         } catch (error: any) {
           setError(error.message);   // obviously, use other components to show
           console.error("Signup error:", error);
