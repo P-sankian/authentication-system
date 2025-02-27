@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from 'next/navigation'
 
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -102,7 +103,7 @@ export  default function Loginform() {
                   )}
                 />
                 <div className="space-x-8">
-                <Button type="submit" className="bg-gray-500 w-20 h-8 hover:bg-green-500">register</Button>
+                <Button type="submit" className="bg-gray-500 w-20 h-8 hover:bg-green-500">Login</Button>
                 <Link href="/signup" className="text-blue-500 text-sm">don't have an account?</Link>
                 </div>
                 
